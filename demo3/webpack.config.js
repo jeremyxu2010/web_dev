@@ -5,9 +5,9 @@ var output_options = {
     path: 'public',
     publicPath: '/demo3/',
     filename: 'js/[name].js',
-    hotUpdateMainFilename: 'hot-update/[name].[hash].hot-update.js',
+    hotUpdateMainFilename: 'hot-update/[hash].hot-update.js',
     chunkFilename: 'js/chunks/[name].js',
-    hotUpdateChunkFilename: 'hot-update/chunks/[name].[hash].hot-update.js',
+    hotUpdateChunkFilename: 'hot-update/chunks/[id].[hash].hot-update.js',
 };
 
 var createHtmlDef = function(opts){
