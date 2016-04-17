@@ -3,11 +3,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var output_options = {
     path: 'public',
+    publicPath: '/demo1/',
     filename: 'js/[name].js',
-    chunkFilename: 'js/[name].js',
-    publicPath: '/demo1',
-    hotUpdateChunkFilename: 'hot-update/[id].[hash].hot-update.js',
-    hotUpdateMainFilename: 'hot-update/[hash].hot-update.js'
+    hotUpdateMainFilename: 'hot-update/[name].[hash].hot-update.js',
+    chunkFilename: 'js/chunks/[name].js',
+    hotUpdateChunkFilename: 'hot-update/chunks/[name].[hash].hot-update.js',
 };
 
 var createHtmlDef = function(opts){
