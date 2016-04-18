@@ -5,7 +5,7 @@ const DB = require('../dao/DB.js');
 module.exports = {
 
     initDB : function *(){
-        let db = yield DB();
+        let db = yield DB;
         let schemas = [];
         for(var key in db.schemas) {
             schemas.push(db.schemas[key]);
