@@ -1,0 +1,20 @@
+{
+  "name": "demo5",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start-server": "node ./src/server/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^1.2.0",
+    "koa-bodyparser": "^2.0.1",
+    "koa-json": "^1.1.1",
+    "koa-router": "^5.4.0",
+    "mysql": "^2.10.2",
+    "orm": "^2.1.30",
+    "orm-transaction": "0.0.2",
+    "q-orm": "0.0.3"
+  }
+}
