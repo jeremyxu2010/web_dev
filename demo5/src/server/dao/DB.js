@@ -2,7 +2,8 @@
 
 const orm = require("orm");
 const qOrm = require('q-orm');
-const transaction = require("orm-transaction");
+const transaction = require('orm-transaction');
+const config = require('../config.js');
 
 function defineSchemas(db){
     db.schemas = {
@@ -15,12 +16,12 @@ function defineSchemas(db){
 }
 
 const DB = qOrm.qConnect({
-    host:     '127.0.0.1',
-    database: 'test',
-    user:     'root',
-    password: '123456',
+    host:     config.db.host,
+    database: config.db.database,
+    user:     config.db.user,
+    password: config.db.pwd,
     protocol: 'mysql',
-    port:     '3306',
+    port:     config.db.port,
     query:    {
         reconnect : true,
         pool: true,
