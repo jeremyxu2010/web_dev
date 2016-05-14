@@ -1,3 +1,4 @@
 node_modules
 public
 !public/.do_not_delete
+.DS_Store
