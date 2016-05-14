@@ -2,7 +2,8 @@
   "name": "demo6",
   "version": "1.0.0",
   "scripts": {
-    "wpack": "./node_modules/.bin/webpack --watch --progress",
+    "dev-wpack": "./node_modules/.bin/webpack --watch --progress",
+    "wpack": "./node_modules/.bin/webpack --progress",
     "dev-serve": "./node_modules/.bin/forever --watch --watchDirectory ./backend ./backend/server.js",
     "serve": "node ./backend/server.js"
   },
